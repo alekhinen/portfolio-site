@@ -20,7 +20,7 @@ export function CruiseAppModal({
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
           Cruise – Driverless Rides
         </ThemedText>
-        <ThemedText style={{ textAlign: "center" }}>
+        <ThemedText style={{ marginTop: Spacing.S2 }}>
           Written in React Native. Released on Android, iOS.{"\n"}2023 – 2025
         </ThemedText>
       </View>

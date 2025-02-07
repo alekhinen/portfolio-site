@@ -16,7 +16,12 @@ export function AppModal({
       <BlurView tint="light" style={{ flex: 1, paddingHorizontal: Spacing.S4 }}>
         <Pressable
           onPress={onClose}
-          style={{ position: "absolute", right: Spacing.S4, top: Spacing.S4 }}
+          style={{
+            zIndex: 1,
+            position: "absolute",
+            right: Spacing.S7 / 2,
+            top: Spacing.S7,
+          }}
         >
           <AntDesign name="close" size={Spacing.S4} color="black" />
         </Pressable>

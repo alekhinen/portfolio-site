@@ -20,7 +20,7 @@ export function NtwrkAppModal({
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
           NTWRK | Live Sneaker Shopping
         </ThemedText>
-        <ThemedText style={{ textAlign: "center" }}>
+        <ThemedText style={{ marginTop: Spacing.S2 }}>
           Written in React Native. Released on Android, iOS, Web.{"\n"}2019 -
           2023
         </ThemedText>

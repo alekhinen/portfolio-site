@@ -20,8 +20,8 @@ export function KnowAppModal({
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
           Know: Video Event Calendar
         </ThemedText>
-        <ThemedText style={{ textAlign: "center" }}>
-          Written in Expo / React Native. Released on iOS, Web.{"\n"}
+        <ThemedText style={{ marginTop: Spacing.S2 }}>
+          Written in Expo and React Native. Released on iOS, Web.{"\n"}
           2025 –
         </ThemedText>
       </View>
