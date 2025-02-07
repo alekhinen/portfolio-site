@@ -16,6 +16,14 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
+    /**
+     * For some reason, the default of using `useFonts({ ...AntDesign.font })`
+     * is not working in Cloudflare Pages.
+     *
+     * Running `npx expo export -p web` produces a directory like `assets/node_modules/...`.
+     *
+     * I have a suspicion that CF is filtering out that `assets/node_modules` directory.
+     */
     anticon: require("@/assets/fonts/AntDesign.ttf"),
   });
 
