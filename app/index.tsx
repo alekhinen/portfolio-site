@@ -9,7 +9,11 @@ import { Spacing } from "@/components/design-system/spacing";
 export default function HomeScreen() {
   return (
     <ScrollView
-      contentContainerStyle={{ alignSelf: "center", paddingBottom: Spacing.S8 }}
+      contentContainerStyle={{
+        alignSelf: "center",
+        paddingBottom: Spacing.S8,
+        paddingHorizontal: Spacing.S4,
+      }}
       stickyHeaderIndices={[0]}
     >
       <StickyHeader />
