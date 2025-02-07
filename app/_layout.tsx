@@ -16,7 +16,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    AntDesign: require("@/assets/fonts/AntDesign.ttf"),
+    anticon: require("@/assets/fonts/AntDesign.ttf"),
   });
 
   const colorScheme = useColorScheme();
