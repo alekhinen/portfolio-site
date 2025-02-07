@@ -3,7 +3,7 @@ import { ThemedText } from "../ThemedText";
 import { Spacing } from "../design-system/spacing";
 import { AppModal } from "./AppModal";
 
-export function KnowAppModal({
+export function NtwrkAppModal({
   show,
   onClose,
 }: {
@@ -18,11 +18,11 @@ export function KnowAppModal({
     <AppModal onClose={onClose}>
       <View style={{ alignSelf: "center", marginTop: Spacing.S6 }}>
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
-          Know: Video Event Calendar
+          NTWRK | Live Sneaker Shopping
         </ThemedText>
         <ThemedText style={{ textAlign: "center" }}>
-          Written in Expo / React Native. Released on iOS, Web.{"\n"}
-          2025 –
+          Written in React Native. Released on Android, iOS, Web.{"\n"}2019 -
+          2023
         </ThemedText>
       </View>
     </AppModal>

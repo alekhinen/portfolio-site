@@ -3,6 +3,8 @@ import { ThemedText } from "../ThemedText";
 import { Spacing } from "../design-system/spacing";
 import { Fragment, useState } from "react";
 import { KnowAppModal } from "./KnowAppModal";
+import { CruiseAppModal } from "./CruiseAppModal";
+import { NtwrkAppModal } from "./NtwrkAppModal";
 
 type AppModals = "know" | "ntwrk" | "cruise";
 
@@ -11,6 +13,14 @@ export function Apps() {
 
   const displayKnowAppModal = () => {
     setVisibleModal("know");
+  };
+
+  const displayNtwrkAppModal = () => {
+    setVisibleModal("ntwrk");
+  };
+
+  const displayCruiseAppModal = () => {
+    setVisibleModal("cruise");
   };
 
   const dismissModal = () => {
@@ -30,21 +40,17 @@ export function Apps() {
           Apps
         </ThemedText>
 
-        <Pressable onPress={displayKnowAppModal}>
-          <View style={styles.appContainer}>
-            <Image
-              style={styles.appIcon}
-              source={require("@/assets/images/know-icon.webp")}
-            />
-            <View style={styles.text}>
-              <ThemedText type="semibold">
-                Know: Video Event Calendar
-              </ThemedText>
-              <ThemedText>Expo / React Native</ThemedText>
-            </View>
+        <Pressable onPress={displayKnowAppModal} style={styles.appContainer}>
+          <Image
+            style={styles.appIcon}
+            source={require("@/assets/images/know-icon.webp")}
+          />
+          <View style={styles.text}>
+            <ThemedText type="semibold">Know: Video Event Calendar</ThemedText>
+            <ThemedText>Expo / React Native</ThemedText>
           </View>
         </Pressable>
-        <View style={styles.appContainer}>
+        <Pressable onPress={displayCruiseAppModal} style={styles.appContainer}>
           <Image
             style={styles.appIcon}
             source={require("@/assets/images/cruise-icon.webp")}
@@ -53,8 +59,8 @@ export function Apps() {
             <ThemedText type="semibold">Cruise - Driverless Rides</ThemedText>
             <ThemedText>React Native</ThemedText>
           </View>
-        </View>
-        <View style={styles.appContainer}>
+        </Pressable>
+        <Pressable onPress={displayNtwrkAppModal} style={styles.appContainer}>
           <Image
             style={styles.appIcon}
             source={require("@/assets/images/ntwrk-icon.webp")}
@@ -65,9 +71,11 @@ export function Apps() {
             </ThemedText>
             <ThemedText>React Native</ThemedText>
           </View>
-        </View>
+        </Pressable>
       </View>
       <KnowAppModal onClose={dismissModal} show={visibleModal === "know"} />
+      <CruiseAppModal onClose={dismissModal} show={visibleModal === "cruise"} />
+      <NtwrkAppModal onClose={dismissModal} show={visibleModal === "ntwrk"} />
     </Fragment>
   );
 }
