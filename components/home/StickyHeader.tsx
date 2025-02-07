@@ -10,7 +10,6 @@ export function StickyHeader() {
       tint="light"
       style={{
         flexDirection: "row",
-        position: "fixed",
         paddingHorizontal: Spacing.S6,
         paddingVertical: Spacing.S3,
         borderRadius: Spacing.S6,
