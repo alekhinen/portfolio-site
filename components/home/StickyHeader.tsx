@@ -3,6 +3,7 @@ import { BlurView } from "expo-blur";
 import { View } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Spacing } from "@/components/design-system/spacing";
+import { ExternalLink } from "../ExternalLink";
 
 export function StickyHeader() {
   return (
@@ -19,10 +20,14 @@ export function StickyHeader() {
         justifyContent: "space-between",
       }}
     >
-      <ThemedText>Nick Alekhine</ThemedText>
+      <ThemedText type="semibold">Nick Alekhine</ThemedText>
       <View style={{ flexDirection: "row", gap: Spacing.S2 }}>
-        <FontAwesome name="linkedin-square" size={Spacing.S5} color="black" />
-        <FontAwesome name="github" size={Spacing.S5} color="black" />
+        <ExternalLink href="https://www.linkedin.com/in/alekhinen/">
+          <FontAwesome name="linkedin-square" size={Spacing.S5} color="black" />
+        </ExternalLink>
+        <ExternalLink href="https://github.com/alekhinen">
+          <FontAwesome name="github" size={Spacing.S5} color="black" />
+        </ExternalLink>
       </View>
     </BlurView>
   );

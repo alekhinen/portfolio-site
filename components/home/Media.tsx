@@ -10,18 +10,18 @@ export function Media() {
         gap: Spacing.S8,
       }}
     >
-      <ThemedText style={{ textAlign: "center" }}>
+      <ThemedText type="semibold" style={{ textAlign: "center" }}>
         Conferences & Podcasts
       </ThemedText>
 
       <View style={styles.appContainer}>
-        <ThemedText>Chain React 2023</ThemedText>
+        <ThemedText type="semibold">Chain React 2023</ThemedText>
         <ThemedText>
           Building NTWRK’s livestream shopping application
         </ThemedText>
       </View>
       <View style={styles.appContainer}>
-        <ThemedText>React Native Radio</ThemedText>
+        <ThemedText type="semibold">React Native Radio</ThemedText>
         <ThemedText>Ep. 272 – Real Life React Native</ThemedText>
       </View>
     </View>

@@ -10,7 +10,9 @@ export function Apps() {
         gap: Spacing.S8,
       }}
     >
-      <ThemedText style={{ textAlign: "center" }}>Apps</ThemedText>
+      <ThemedText type="semibold" style={{ textAlign: "center" }}>
+        Apps
+      </ThemedText>
 
       <View style={styles.appContainer}>
         <Image
@@ -18,7 +20,7 @@ export function Apps() {
           source={require("@/assets/images/know-icon.webp")}
         />
         <View>
-          <ThemedText>Know: Video Event Calendar</ThemedText>
+          <ThemedText type="semibold">Know: Video Event Calendar</ThemedText>
           <ThemedText>Expo / React Native</ThemedText>
         </View>
       </View>
@@ -28,7 +30,7 @@ export function Apps() {
           source={require("@/assets/images/cruise-icon.webp")}
         />
         <View>
-          <ThemedText>Cruise - Driverless Rides</ThemedText>
+          <ThemedText type="semibold">Cruise - Driverless Rides</ThemedText>
           <ThemedText>React Native</ThemedText>
         </View>
       </View>
@@ -38,7 +40,7 @@ export function Apps() {
           source={require("@/assets/images/ntwrk-icon.webp")}
         />
         <View>
-          <ThemedText>NTWRK | Live Sneaker Shopping</ThemedText>
+          <ThemedText type="semibold">NTWRK | Live Sneaker Shopping</ThemedText>
           <ThemedText>React Native</ThemedText>
         </View>
       </View>

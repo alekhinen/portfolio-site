@@ -11,7 +11,9 @@ export function Web() {
         width: "100%",
       }}
     >
-      <ThemedText style={{ textAlign: "center" }}>Web</ThemedText>
+      <ThemedText type="semibold" style={{ textAlign: "center" }}>
+        Web
+      </ThemedText>
 
       <View style={styles.appContainer}>
         <ThemedText>CALA</ThemedText>
