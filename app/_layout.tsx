@@ -10,13 +10,14 @@ import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { useFonts } from "expo-font";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded] = useFonts({ ...FontAwesome.font });
+  const [loaded] = useFonts({
+    FontAwesome: require("@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf"), // ✅ Correct way to load the font
+  });
 
   const colorScheme = useColorScheme();
 
