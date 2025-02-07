@@ -16,7 +16,7 @@ export function AppModal({
 
   return (
     <Modal transparent>
-      <BlurView tint={tint} style={{ flex: 1, paddingHorizontal: Spacing.S4 }}>
+      <BlurView tint={tint} style={{ flex: 1 }}>
         <Pressable
           onPress={onClose}
           style={{
