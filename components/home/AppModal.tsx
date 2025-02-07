@@ -26,7 +26,11 @@ export function AppModal({
             top: Spacing.S7,
           }}
         >
-          <AntDesign name="close" size={Spacing.S4} color={iconColor} />
+          <AntDesign
+            name="close"
+            size={Spacing.S4}
+            style={{ color: iconColor }}
+          />
         </Pressable>
 
         {children}

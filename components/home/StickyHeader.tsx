@@ -30,11 +30,15 @@ export function StickyHeader() {
           <AntDesign
             name="linkedin-square"
             size={Spacing.S5}
-            color={iconColor}
+            style={{ color: iconColor }}
           />
         </ExternalLink>
         <ExternalLink href="https://github.com/alekhinen">
-          <AntDesign name="github" size={Spacing.S5} color={iconColor} />
+          <AntDesign
+            name="github"
+            size={Spacing.S5}
+            style={{ color: iconColor }}
+          />
         </ExternalLink>
       </View>
     </BlurView>
