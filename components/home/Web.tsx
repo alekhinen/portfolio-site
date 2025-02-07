@@ -1,6 +1,7 @@
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 import { ThemedText } from "../ThemedText";
 import { Spacing } from "../design-system/spacing";
+import { ExternalLink } from "../ExternalLink";
 
 export function Web() {
   return (
@@ -15,14 +16,14 @@ export function Web() {
         Web
       </ThemedText>
 
-      <View style={styles.appContainer}>
-        <ThemedText>CALA</ThemedText>
-        <ThemedText>Everlane</ThemedText>
+      <View>
+        <ExternalLink href="https://ca.la">
+          <ThemedText>CALA</ThemedText>
+        </ExternalLink>
+        <ExternalLink href="https://everlane.com">
+          <ThemedText>Everlane</ThemedText>
+        </ExternalLink>
       </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  appContainer: {},
-});
