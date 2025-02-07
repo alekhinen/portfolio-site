@@ -16,15 +16,15 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded] = useFonts({
-    ...FontAwesome.font,
-  });
+  const [loaded] = useFonts({ ...FontAwesome.font });
 
   const colorScheme = useColorScheme();
 
   useEffect(() => {
-    SplashScreen.hideAsync();
-  }, []);
+    if (loaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded]);
 
   if (!loaded) {
     return null;
