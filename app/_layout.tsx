@@ -10,13 +10,14 @@ import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { useFonts } from "expo-font";
-import AntDesign from "@expo/vector-icons/AntDesign";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded] = useFonts({ ...AntDesign.font });
+  const [loaded] = useFonts({
+    AntDesign: require("@/assets/fonts/AntDesign.ttf"),
+  });
 
   const colorScheme = useColorScheme();
 
