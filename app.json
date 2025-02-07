@@ -20,12 +20,7 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png",
-      "fonts": [
-        {
-          "asset": "node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf"
-        }
-      ]
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
