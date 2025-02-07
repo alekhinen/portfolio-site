@@ -5,10 +5,14 @@ import { Apps } from "@/components/home/Apps";
 import { Media } from "@/components/home/Media";
 import { Web } from "@/components/home/Web";
 import { Spacing } from "@/components/design-system/spacing";
+import { useThemeColor } from "@/hooks/useThemeColor";
 
 export default function HomeScreen() {
+  const backgroundColor = useThemeColor({}, "background");
+
   return (
     <ScrollView
+      style={{ backgroundColor }}
       contentContainerStyle={{
         alignSelf: "center",
         paddingBottom: Spacing.S8,
