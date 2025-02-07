@@ -4,11 +4,20 @@ import { useColorScheme, View } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { Spacing } from "@/components/design-system/spacing";
 import { ExternalLink } from "../ExternalLink";
+import { useEffect, useState } from "react";
 
 export function StickyHeader() {
   const theme = useColorScheme() ?? "light";
-  const tint = theme === "dark" ? "dark" : "light";
-  const iconColor = theme === "dark" ? "white" : "black";
+
+  const [tint, setTint] = useState(theme === "dark" ? "dark" : "light");
+  const [iconColor, setIconColor] = useState(
+    theme === "dark" ? "white" : "black"
+  );
+
+  useEffect(() => {
+    setTint(theme === "dark" ? "dark" : "light");
+    setIconColor(theme === "dark" ? "white" : "black");
+  }, [theme]);
 
   return (
     <BlurView
