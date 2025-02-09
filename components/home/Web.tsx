@@ -9,6 +9,7 @@ export function Web() {
       style={{
         marginTop: Spacing.S16,
         gap: Spacing.S8,
+        paddingBottom: Spacing.S8,
         width: "100%",
       }}
     >
