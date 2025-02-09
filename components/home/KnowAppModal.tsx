@@ -3,6 +3,7 @@ import { ThemedText } from "../ThemedText";
 import { Spacing } from "../design-system/spacing";
 import { AppModal } from "./AppModal";
 import { ImageGallery } from "./ImageGallery.web";
+import { ExternalLink } from "../ExternalLink";
 
 const images = [
   require("@/assets/images/know/1.jpg"),
@@ -34,7 +35,9 @@ export function KnowAppModal({
         }}
       >
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
-          Know: Video Event Calendar
+          <ExternalLink href="https://apps.apple.com/us/app/know-video-event-calendar/id1494585957">
+            Know: Video Event Calendar
+          </ExternalLink>
         </ThemedText>
         <ThemedText style={{ marginTop: Spacing.S2, textAlign: "center" }}>
           Written in Expo and React Native. Released on iOS, Web.{"\n"}

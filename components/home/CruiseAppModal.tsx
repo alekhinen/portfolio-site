@@ -3,6 +3,7 @@ import { ThemedText } from "../ThemedText";
 import { Spacing } from "../design-system/spacing";
 import { AppModal } from "./AppModal";
 import { ImageGallery } from "./ImageGallery.web";
+import { ExternalLink } from "../ExternalLink";
 
 const images = [
   require("@/assets/images/cruise/1.jpg"),
@@ -34,7 +35,9 @@ export function CruiseAppModal({
         }}
       >
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
-          Cruise – Driverless Rides
+          <ExternalLink href="https://apps.apple.com/us/app/cruise-driverless-rides/id1591320655">
+            Cruise – Driverless Rides
+          </ExternalLink>
         </ThemedText>
         <ThemedText style={{ marginTop: Spacing.S2, textAlign: "center" }}>
           Written in React Native. Released on Android, iOS.{"\n"}2023 – 2025

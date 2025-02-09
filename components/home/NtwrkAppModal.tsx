@@ -3,6 +3,7 @@ import { ThemedText } from "../ThemedText";
 import { Spacing } from "../design-system/spacing";
 import { AppModal } from "./AppModal";
 import { ImageGallery } from "./ImageGallery.web";
+import { ExternalLink } from "../ExternalLink";
 
 const images = [
   require("@/assets/images/ntwrk/1.jpg"),
@@ -35,7 +36,9 @@ export function NtwrkAppModal({
         }}
       >
         <ThemedText type="semibold" style={{ textAlign: "center" }}>
-          NTWRK | Live Sneaker Shopping
+          <ExternalLink href="https://apps.apple.com/us/app/ntwrk-live-sneaker-shopping/id1425910407">
+            NTWRK | Live Sneaker Shopping
+          </ExternalLink>
         </ThemedText>
         <ThemedText style={{ marginTop: Spacing.S2, textAlign: "center" }}>
           Written in React Native. Released on Android, iOS, Web.{"\n"}2019 -

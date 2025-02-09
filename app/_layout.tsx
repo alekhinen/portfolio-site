@@ -1,14 +1,9 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider,
-} from "@react-navigation/native";
+import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Slot } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { useFonts } from "expo-font";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -27,8 +22,6 @@ export default function RootLayout() {
     anticon: require("@/assets/fonts/AntDesign.ttf"),
   });
 
-  const colorScheme = useColorScheme();
-
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
@@ -40,7 +33,7 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={DefaultTheme}>
       <Slot />
     </ThemeProvider>
   );
