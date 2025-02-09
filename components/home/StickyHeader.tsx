@@ -1,14 +1,13 @@
 import { ThemedText } from "@/components/ThemedText";
 import { BlurView } from "expo-blur";
-import { useColorScheme, View } from "react-native";
+import { View } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { Spacing } from "@/components/design-system/spacing";
 import { ExternalLink } from "../ExternalLink";
 
 export function StickyHeader() {
-  const theme = useColorScheme() ?? "light";
-  const tint = theme === "dark" ? "dark" : "light";
-  const iconColor = theme === "dark" ? "white" : "black";
+  const tint = "light";
+  const iconColor = "black";
 
   return (
     <BlurView

@@ -1,4 +1,4 @@
-import { Modal, Pressable, useColorScheme } from "react-native";
+import { Modal, Pressable } from "react-native";
 import { BlurView } from "expo-blur";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { Spacing } from "../design-system/spacing";
@@ -10,9 +10,8 @@ export function AppModal({
   onClose: () => void;
   children: React.ReactNode;
 }) {
-  const theme = useColorScheme() ?? "light";
-  const tint = theme === "dark" ? "dark" : "light";
-  const iconColor = theme === "dark" ? "white" : "black";
+  const tint = "light";
+  const iconColor = "black";
 
   return (
     <Modal transparent>
