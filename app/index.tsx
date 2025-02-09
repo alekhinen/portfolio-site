@@ -15,6 +15,15 @@ export default function HomeScreen() {
     <HelmetProvider>
       <Helmet>
         <title>Nick Alekhine</title>
+        <meta
+          name="description"
+          content="Nick Alekhine is a software engineer who focuses on React Native applications."
+        />
+        <meta
+          name="keywords"
+          content="React Native, TypeScript, Staff Software Engineer, Tech Lead, Cruise, NTWRK, Know, Everlane, CALA"
+        />
+        <meta name="author" content="Nick Alekhine" />
       </Helmet>
 
       <ScrollView
