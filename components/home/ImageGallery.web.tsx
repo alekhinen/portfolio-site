@@ -41,4 +41,5 @@ const imageStyles = {
   height: "100%",
   width: "auto",
   objectFit: "contain",
+  borderRadius: Spacing.S6,
 } as const;
